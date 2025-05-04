@@ -93,6 +93,41 @@ body{
     font-weight: var(--fw-400);
 }
 
+/* desktop design */
+.container {
+    min-height: 100vh;
+    min-width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: var(--clr-White);
+    max-width: 740px;
+    max-height: 520px;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 1rem;
+
+    position: relative;
+    border-radius: 1.4rem;
+
+}
+
+.wrapper > img{
+    /* object-fit:contain; */
+    width: 50%;
+}
+
+.content {
+    padding: 2.4rem;
+}
+
+
+/* mobile design */
 @media screen and (max-width:375px){
 
 }
