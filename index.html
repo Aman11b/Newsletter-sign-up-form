@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
@@ -38,7 +41,7 @@
       </div>
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop_image">
     </article>
-    <article class="overlay">
+    <article class="overlay" style="display: none;">
       <img src="./assets/images/icon-success.svg" alt="icon-success">
       <H1>Thanks for subscribing!</H1>
       <p>  
@@ -50,6 +53,6 @@
 
     </article>
   </main>
-
+  <script src="./main.js" defer></script>
 </body>
 </html>
