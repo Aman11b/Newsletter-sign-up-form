@@ -165,11 +165,18 @@ ul li {
 form {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
+.label_container {
+    display: flex;
+    justify-content: space-between;
+}
 label {
     font-weight: var(--fw-700);
     margin-bottom: 6px;
+
+    
 }
 input {
     margin-bottom: 1rem;
@@ -218,6 +225,24 @@ button:hover{
 
 .overlay button {
     height: 3.4rem;
+}
+
+.error{
+    border: 2px solid red;
+    color: red;
+    background-color: #FF527B;
+}
+
+.error-message{
+    color: #FF527B;
+    font-size: 14px;
+    font-weight: var(--fw-700);
+    visibility: hidden;
+    margin-left: 10px;
+}
+
+.error-message.visible{
+    visibility: visible;
 }
 
 /* mobile design */
