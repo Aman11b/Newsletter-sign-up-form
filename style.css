@@ -105,6 +105,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .wrapper{
     background-color: var(--clr-White);
     max-width: 740px;
@@ -121,7 +122,6 @@ body{
 }
 
 .wrapper > img{
-    /* object-fit:contain; */
     width: 50%;
 }
 
@@ -220,11 +220,33 @@ button:hover{
     height: 3.4rem;
 }
 
-
-
-
-
 /* mobile design */
 @media screen and (max-width:375px){
+
+    body{
+        background-color: var(--clr-White);
+    }
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+
+        padding: 0;
+    }
+
+    .wrapper > img{
+        width:100%;
+        content: url('./assets/images/illustration-sign-up-mobile.svg');
+        
+    }
+
+    .overlay{
+        padding: 2rem ;
+    }
+
+    .overlay button {
+        margin-top: 10rem;
+        height: 3.4rem;
+    }
 
 }
