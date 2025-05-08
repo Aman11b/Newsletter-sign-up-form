@@ -16,11 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if(!emailPattern.test(email)){
             emailInput.classList.add('error');
+            
             errorMessage.textContent = 'Valid email required';
             errorMessage.classList.add('visible');
             return;
         }
-
+        
         emailInput.classList.remove('error');
         errorMessage.textContent = '';
         errorMessage.classList.remove('visible');
